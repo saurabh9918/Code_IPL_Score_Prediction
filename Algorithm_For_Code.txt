@@ -1,0 +1,23 @@
+Algorithm of the Code:
+Step 1: Enter into the predictor function and read data from csv file into a pandas dataFrame
+Step 2: Create another column that tells the number of runs scored, including off the bat and extra runs conceded by the bowling team
+Step 3: Now drop the columns 'run_off_bat' and 'extras' as they are not required anymore
+Step 4: Only selectrows belonging to first 6 overs
+Step 5: Preprocess the data so that we get a tuple of following kind in each row:('match_id','venue','innings','batting_team','bowling_team','total_runs')
+Step 6: Convert back to the dataframe
+Step 7: Read data from the unzipped folder
+Step 8: Get data in a numpy array
+Step 9: Get independent and target variables
+Step 10: Split data in training and testing
+Step 11: Fit a linear regressor
+Step 12: Train the model
+Step 13: Save the model and the supporting label encoders
+Step 14: Read test data
+Step 15: Encode venue and batting and bowling teams
+Step 16: Make sure that the order of columns is same as that fed to the model
+Step 17: Convert input test case into numpy array
+Step 18: One hot encode venue, batting and bowling teams take as an numpy array
+Step 19: Return the predicted score to main code
+Step 20: Print the Output    
+    
+    
